@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fileCell" rowHeight="109" id="nff-7X-Haq" customClass="FileCell" customModule="FileList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nff-7X-Haq" id="GxK-nU-fav">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aS-Ls-LxV">
+                        <rect key="frame" x="75" y="12" width="124" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IYr-kM-EcJ">
+                        <rect key="frame" x="75" y="31.5" width="303" height="49.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJs-Wm-Idl">
+                        <rect key="frame" x="230" y="12" width="147" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ORn-PJ-SQL">
+                        <rect key="frame" x="12" y="12" width="46" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="Coh-I3-5l7"/>
+                        </constraints>
+                        <imageReference key="image" image="doc" catalog="system" symbolScale="small" renderingMode="original"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IYr-kM-EcJ" firstAttribute="leading" secondItem="ORn-PJ-SQL" secondAttribute="trailing" constant="17" id="2rN-Ml-qDJ"/>
+                    <constraint firstAttribute="bottom" secondItem="IYr-kM-EcJ" secondAttribute="bottom" constant="8" id="BdY-wr-Ijr"/>
+                    <constraint firstAttribute="trailing" secondItem="YJs-Wm-Idl" secondAttribute="trailing" constant="9" id="ED4-zG-L1n"/>
+                    <constraint firstItem="3aS-Ls-LxV" firstAttribute="top" secondItem="GxK-nU-fav" secondAttribute="top" constant="12" id="FhG-Fk-5fj"/>
+                    <constraint firstItem="YJs-Wm-Idl" firstAttribute="leading" secondItem="3aS-Ls-LxV" secondAttribute="trailing" constant="31" id="MZ9-o4-sek"/>
+                    <constraint firstAttribute="trailing" secondItem="IYr-kM-EcJ" secondAttribute="trailing" constant="8" id="Pwi-Cm-whh"/>
+                    <constraint firstItem="ORn-PJ-SQL" firstAttribute="top" secondItem="GxK-nU-fav" secondAttribute="top" constant="10" id="SeK-c4-rML"/>
+                    <constraint firstItem="IYr-kM-EcJ" firstAttribute="top" secondItem="3aS-Ls-LxV" secondAttribute="bottom" constant="5" id="TLA-yf-GRR"/>
+                    <constraint firstItem="3aS-Ls-LxV" firstAttribute="leading" secondItem="ORn-PJ-SQL" secondAttribute="trailing" constant="17" id="Wpb-Bp-1HM"/>
+                    <constraint firstItem="ORn-PJ-SQL" firstAttribute="leading" secondItem="GxK-nU-fav" secondAttribute="leading" constant="12" id="YrL-jc-K7f"/>
+                    <constraint firstItem="YJs-Wm-Idl" firstAttribute="top" secondItem="GxK-nU-fav" secondAttribute="top" constant="12" id="aHz-IZ-hT0"/>
+                    <constraint firstItem="IYr-kM-EcJ" firstAttribute="top" secondItem="YJs-Wm-Idl" secondAttribute="bottom" constant="5" id="pU0-EJ-3nR"/>
+                    <constraint firstAttribute="bottom" secondItem="ORn-PJ-SQL" secondAttribute="bottom" constant="10" id="sV3-yo-IiG"/>
+                    <constraint firstItem="3aS-Ls-LxV" firstAttribute="leading" secondItem="ORn-PJ-SQL" secondAttribute="trailing" constant="17" id="xXC-82-zM9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="createdAtLabel" destination="YJs-Wm-Idl" id="w5t-BM-iSm"/>
+                <outlet property="descriptionLabel" destination="IYr-kM-EcJ" id="5ce-o3-FBa"/>
+                <outlet property="nameLabel" destination="3aS-Ls-LxV" id="wmV-ch-NN4"/>
+                <outlet property="thumbnailImageView" destination="ORn-PJ-SQL" id="Uzj-ZZ-mmF"/>
+            </connections>
+            <point key="canvasLocation" x="-294.20289855072468" y="-203.90625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="doc" catalog="system" width="115" height="128"/>
+    </resources>
+</document>
